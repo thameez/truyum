@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>template</title>
+     <link rel="stylesheet" href="style/style.css">
+     <script src="js/script.js"></script>
+    </head>
+<body>
+    <header>
+         <div id="header_container"> 
+         <div class="col_3">
+             <c>truYum</c>
+         <img src="images/fork-knife.png">
+          </div>
+          <div class="col_3">
+         <div>
+            <a href="menu-item-list-admin.html" class="menu-link">Menu</a> 
+         </div>
+         </div>
+         </div>
+    </header>
+    <section>
+        <div id="cap_title">Edit Menu</div>
+        <form action="edit-menu-item-status.html" onsubmit="return validateForm()">
+     <table id="editPage">
+        
+         <tr>
+             <td>
+                 <p>Name</p>
+                 <input type="text" name="title" id="title" size="10">
+             </td>
+         </tr>
+         <tr>
+             <td> 
+                 <p>Price (Rs.)</p>
+                 <input type="number" name="price" id="price" min="2" max="65">
+             </td>
+             <td>
+                 <p>Active</p>
+                 <input type="radio" name="inStock" id="inStock">Yes
+                 <input type="radio" name="inStock" id="inStock">No
+             </td>
+             <td>
+                 <p>Date of Launch</p>
+                 <input type="date" name="dateOfLaunch" id="dateOfLaunch">
+             </td>
+             <td> 
+                 
+              <p>Category</p>           
+              <select name="category">
+                 <option>Main Course</option>
+                 <option>Starters</option>
+                 <option>Dessert</option>
+                 <option>Main Course</option>
+                 <option>Drinks</option>
+             </select>
+            </td>
+         </tr>
+         <tr>
+             <td>
+                 <input type="checkbox" name="freedelivery">Free Delivery
+             </td>
+         </tr>
+         <tr>
+             <td>
+                 <input type="submit" id="submit" value="Save">
+             </td>
+         </tr>
+        </form>
+     </table>
+    </section>
+    <footer>
+      <div id="copy_footer">Copyright &copy; 2019</div>  
+    </footer>
+      
+</body>
+</html>
